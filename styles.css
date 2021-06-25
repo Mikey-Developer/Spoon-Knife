@@ -3,6 +3,15 @@
   padding:0px;
 }
 
+body{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 #octocat {
   display: block;
   width:384px;
@@ -14,4 +23,30 @@ p {
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+hr {
+  border: 5px solid cyan;
+  margin: 10vh 5vh;
+  width: 75%;
+}
+
+.special{
+  font-size: 2.5rem;
+  animation-name: rainbow-text;
+  animation-timing-function: linear;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes rainbow-text{
+  0% {color: red;}
+  15% {color: orange;}
+  30% {color: yellow;}
+  45% {color: green;}
+  60% {color: blue;}
+  75% {color: indigo;}
+  90% {color: violet;}
+  100% {color: red;}
 }
